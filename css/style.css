@@ -160,6 +160,13 @@
   font-size: 2.5rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -222,12 +229,6 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
   html {
     min-height: 100vh;
     width: 100vw;
@@ -246,13 +247,12 @@ body {
   }
   .container {
     width: 100%;
-    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .result {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
   }
 }
@@ -265,11 +265,15 @@ body {
 
 @media screen and (min-width: 451px) {
   .box {
-    width: 200px;
+    width: 250px;
   }
   .result {
     width: 100%;
     margin: 0 auto;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
   }
 }
 
